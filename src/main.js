@@ -11,7 +11,7 @@ function filtrar(){
     container.innerHTML= '';
     let searchValue = inputFilter.value.toLowerCase()
 
-    for (let pizza of Pizzas) {
+    for (let pizza of localStoragePizzas) {
         let nombre = pizza.nombre.toLowerCase() 
         if(nombre.indexOf(searchValue) !== -1){
             container.innerHTML += `<div class="card  border-2 rounded-md border-solid border-slate-900  w-80 h-96 flex flex-col m-3">
@@ -37,6 +37,6 @@ filtrar();
 
 
 
-// window.addEventListener('load',()=>{
-//     localStorage.setItem('Pizzas',JSON.stringify(Pizzas))
-// })
+window.addEventListener('load',()=>{
+    localStorage.setItem('Pizzas',JSON.stringify(Pizzas))
+})
