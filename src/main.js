@@ -37,6 +37,6 @@ filtrar();
 
 
 
-window.addEventListener('load',()=>{
-    localStorage.setItem('Pizzas',JSON.stringify(Pizzas))
-})
+// window.addEventListener('load',()=>{
+//     localStorage.setItem('Pizzas',JSON.stringify(Pizzas))
+// })
